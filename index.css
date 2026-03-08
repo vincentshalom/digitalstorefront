@@ -1,0 +1,22 @@
+:root {
+  --hero-img: url("/images/heroBg.jpg");
+}
+
+*,
+::after,
+::before {
+  scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.ion-icon {
+  color: gold;
+}
