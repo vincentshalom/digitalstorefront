@@ -29,7 +29,7 @@
         </ul>
         <div class="flex items-center lg:gap-5 gap-3">
           <form
-            class="flex items-center border border-slate-100 w-80 rounded-full py-1 px-2 focus-within:border-black overflow-hidden bg-white shadow"
+            class="hidden lg:flex items-center border border-slate-100 w-80 rounded-full py-1 px-2 focus-within:border-black overflow-hidden bg-white shadow"
           >
             <input
               type="text"
@@ -60,7 +60,7 @@
               >0</span
             >
           </button>
-          <button type="button" class="block lg:hidden ml-5">
+          <button type="button" class="h-7 w-7 block lg:hidden ml-5">
            <ion-icon name="menu-outline" class="cursor-pointer text-xl"></ion-icon>
           </button>
         </div>
@@ -194,12 +194,71 @@
         </section>
       </aside>
       <!-- HERO SECTION -->
-      <section class="bg-[#000] min-h-fit">
-        <!-- prettier-ignore -->
+      <!-- <section class="bg-[#000] min-h-fit">
+       
         <div class="max-w-full md:max-w-[90%] mx-auto px-4 md:py-45 pt-40 pb-10 px-6 bg-gray-50 h-full bg-[url('images/herobg2.jpg')] bg-no-repeat bg-center bg-cover bg-fixed relative">
           <div class="absolute inset-0 bg-black/60"></div>
           <div class="max-w-6xl mx-auto relative z-50 text-white">
-            <!-- prettier-ignore -->
+           
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+              A Great Place To Eat
+              <span class="block">In The City Of Mississippi.</span>
+            </h1>
+            <p class="text-gray-200 max-w-xl mb-8 text-base">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+              asperiores laborum illo rerum sunt corporis assumenda impedit
+              doloremque. Maxime, adipisci!
+            </p>
+
+       
+            <a href="#categories" class="inline-block bg-white text-[#1a1a1a] py-3 px-6 rounded-tl-2xl rounded-br-2xl shadow-lg font-bold transition active:translate-y-[3px] hover:shadow-xl">View Recipes</a>
+            <div class="flex items-center mt-8">
+              <img
+                src="https://www.loremfaces.net/96/id/1.jpg"
+                alt="happy customer"
+                class="h-[50px] w-[50px] rounded-full border-4 border-white"
+              />
+              
+              <img
+                src="https://www.loremfaces.net/96/id/4.jpg"
+                alt="happy customer"
+                class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
+              />
+              <img
+                src="https://www.loremfaces.net/96/id/5.jpg"
+                alt="happy customer"
+                class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
+              />
+              <img
+                src="https://www.loremfaces.net/96/id/2.jpg"
+                alt="happy customer"
+                class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
+              />
+            </div>
+          
+            <div class="flex items-center mt-6 gap-1">
+                <ion-icon name="star" class="ion-icon"></ion-icon>
+                <ion-icon name="star" class="ion-icon"></ion-icon>
+                <ion-icon name="star" class="ion-icon"></ion-icon>
+                <ion-icon name="star" class="ion-icon"></ion-icon>
+                <ion-icon name="star-half" class="ion-icon"></ion-icon>
+                <span class="ml-2 text-gray-200 text-sm font-semibold">
+                4.9/5 from 2,000+ reviews
+              </span>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+
+
+
+
+
+<section class="relative min-h-screen bg-[url('/images/herobg2.jpg')] bg-cover bg-center lg:bg-fixed">
+  <div class="absolute top-0 left-0 right-0 bottom-0 bg-black/60"></div>
+  <div class="relative z-10 max-w-6xl mx-auto px-6 pt-40 pb-10 text-white">
+     <!-- prettier-ignore -->
             <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               A Great Place To Eat
               <span class="block">In The City Of Mississippi.</span>
@@ -246,9 +305,9 @@
                 4.9/5 from 2,000+ reviews
               </span>
             </div>
-          </div>
-        </div>
-      </section>
+  </div>
+</section>
+
       <!-- CATEGORIES -->
       <section class="min-h-fit bg-[#f4f4f4] mb-18 py-8" id="categories">
         <div
