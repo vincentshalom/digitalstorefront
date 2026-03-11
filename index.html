@@ -8,18 +8,21 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="min-h-fit bg-[#f4f4f4] fixed top-0 w-full z-100 py-4">
+    <header class="min-h-fit bg-[#f4f4f4] fixed top-0 w-full z-100 py-4 px-4">
       <!-- DESKTOP NAVIGATION -->
       <nav
-        class="max-w-full lg:max-w-[90%] mx-auto py-3 px-8 flex items-center justify-between gap-4 bg-[#fff] rounded-[100px] shadow"
+        class="max-w-full lg:max-w-[90%] mx-auto py-3 lg:px-8 px-4 flex items-center justify-between gap-4 bg-[#fff] rounded-[100px] shadow"
       >
-        <h1 class="font-bold text-3xl">
-          <a href="index.html">
-            <ion-icon name="restaurant-outline" class="text-xl"></ion-icon>
+        <h1 class="font-bold text-3xl h-7 w-7 flex items-center justify-center">
+          <a
+            href="index.html"
+            class="h-full w-full flex items-center justify-center"
+          >
+            <ion-icon name="restaurant-outline" class="text-3xl"></ion-icon>
           </a>
         </h1>
         <ul
-          class="hidden lg:flex items-center gap-6 font-semibold text-gray-600"
+          class="hidden lg:flex items-center gap-5 font-semibold text-gray-600"
         >
           <li><a href="#snacks">Snacks</a></li>
           <li><a href="#foods">Foods</a></li>
@@ -46,141 +49,167 @@
             </button>
           </form>
 
-          <p class="h-7 w-7 flex items-center justify-center rounded-full">
+          <p
+            class="hidden h-7 w-7 lg:flex items-center justify-center rounded-full"
+          >
             <a href="#" class="flex items-center">
-             <ion-icon name="person-circle-outline" class="cursor-pointer text-3xl"></ion-icon>
+              <ion-icon
+                name="person-circle-outline"
+                class="cursor-pointer text-3xl"
+              ></ion-icon>
             </a>
           </p>
-          <button type="button"
+
+          <button
+            type="submit"
+            class="h-7 w-7 p-1 bg-white rounded-full flex lg:hidden items-center justify-center hover:bg-gray-100 transition cursor-pointer"
+          >
+            <ion-icon name="search-outline" class="text-3xl"></ion-icon>
+          </button>
+
+          <button
+            type="button"
             class="flex items-center relative h-7 w-7 flex items-center justify-center rounded-full"
           >
-            <ion-icon name="cart-outline" class="cursor-pointer text-3xl"></ion-icon>
+            <ion-icon
+              name="cart-outline"
+              class="cursor-pointer text-3xl"
+            ></ion-icon>
             <span
               class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full"
               >0</span
             >
           </button>
-          <button type="button" class="h-7 w-7 block lg:hidden ml-5">
-           <ion-icon name="menu-outline" class="cursor-pointer text-xl"></ion-icon>
+          <button
+            type="button"
+            class="h-7 w-7 block lg:hidden ml-5 flex items-center justify-center"
+          >
+            <ion-icon
+              name="menu-outline"
+              class="cursor-pointer text-3xl"
+            ></ion-icon>
           </button>
         </div>
       </nav>
       <!-- MOBILE SEARCH BAR -->
-      <section
-        class="hidden lg:hidden absolute top-0 w-full z-200 min-h-[150px] bg-[#f4f4f4] p-4 rounded-bl-[30px] rounded-br-[30px] flex items-center gap-10"
-      >
-        <form
-          class="flex items-center border border-slate-100 w-full rounded-full py-2 px-2 focus-within:border-black overflow-hidden bg-white shadow"
-        >
-          <input
-            type="search"
-            name=""
-            id=""
-            class="outline-none bg-transparent text-sm px-2 w-full placeholder:text-gray-500 text-lg"
-            placeholder="Search Products..."
-          />
-          <ion-icon name="search-outline" class="text-xl"></ion-icon>
-          </button>
-        </form>
 
-        <button type="button" class="bg-transparent">
-          <ion-icon name="close-outline" class="text-xl cursor-pointer"></ion-icon>
-        </button>
+      <section
+        class="hidden lg:hidden absolute top-0 left-0 right-0 w-full z-[200] bg-[#f4f4f4] p-4 rounded-bl-[30px] rounded-br-[30px] min-h-[20rem]"
+      >
+        <div class="h-fit flex items-center gap-4 mt-[1.5rem]">
+          <form
+            class="flex items-center border border-slate-100 w-full rounded-sm py-2 px-2 focus-within:border-black overflow-hidden bg-white shadow"
+          >
+            <input
+              type="search"
+              name=""
+              id=""
+              class="outline-none bg-transparent text-sm px-2 w-full placeholder:text-gray-500 text-lg"
+              placeholder="Search Products..."
+            />
+            <button type="submit" class="p-1">
+              <ion-icon name="search-outline" class="text-xl"></ion-icon>
+            </button>
+          </form>
+
+          <button type="button" class="bg-transparent h-fit">
+            <ion-icon
+              name="close-outline"
+              class="text-xl cursor-pointer"
+            ></ion-icon>
+          </button>
+        </div>
       </section>
     </header>
 
     <main class="relative">
       <!-- MOBILE NAVIGATION -->
       <aside
-        class="hidden block lg:hidden fixed top-0 bottom-0 left-0 w-full min-h-dvh z-200 bg-[rgba(0,0,0,0.6)]"
+        id="mobileMenu"
+        class="lg:hidden fixed top-0 bottom-0 left-0 w-full min-h-screen z-[200] bg-[rgba(0,0,0,0.6)]"
       >
-        <section class="w-3/4 bg-[#000] flex flex-col gap-3 min-h-dvh">
+        <section class="w-3/4 bg-[#000] flex flex-col gap-3 min-h-screen">
           <header
-            class="flex justify-between items-center gap-3 text-[#1a1a1a] py-[30px] px-4 bg-[#f4f4f4]"
+            class="flex justify-between items-center gap-3 text-[#1a1a1a] py-[24.5px] px-4 bg-[#f4f4f4]"
           >
-            <h1 class="font-bold text-xl">
-              <a href="index.html" class="">LOGO</a>
+            <h1
+              class="font-bold text-3xl h-7 w-7 flex items-center justify-center"
+            >
+              <a
+                href="index.html"
+                class="h-full w-full flex items-center justify-center"
+              >
+                <ion-icon name="restaurant-outline" class="text-3xl"></ion-icon>
+              </a>
             </h1>
 
             <button type="button" class="bg-transparent">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="3"
-                stroke="currentColor"
-                class="size-6 cursor-pointer transition transform hover:rotate-[360deg]"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18 18 6M6 6l12 12"
-                />
-              </svg>
+              <ion-icon name="close-outline" class="text-3xl"></ion-icon>
             </button>
           </header>
-          <ul
-            class="flex flex-col gap-2 w-full text-white py-4 overflow-hidden grow"
-          >
-            <li
-              class="px-4 py-3 transition transform hover:bg-slate-600 hover:translate-x-4"
-            >
-              <a href="#snacks" class="flex items-center gap-2">
-                <ion-icon name="pizza-outline" class="text-xl"></ion-icon>
-                Snack
-              </a>
-            </li>
-            <li
-              class="px-4 py-3 transition transform hover:bg-slate-600 hover:translate-x-4"
-            >
-              <a href="#foods" class="flex items-center gap-2">
-                <ion-icon name="fast-food-outline" class="text-xl"></ion-icon>
-                Foods
-              </a>
-            </li>
-            <li
-              class="px-4 py-3 transition transform hover:bg-slate-600 hover:translate-x-4"
-            >
-              <a href="#wines" class="flex items-center gap-2">
-                <ion-icon name="wine-outline" class="text-xl"></ion-icon> Wines
-              </a>
-            </li>
-
-            <li
-              class="px-4 py-3 transition transform hover:bg-slate-600 hover:translate-x-4"
-            >
-              <a href="about.html" class="flex items-center gap-2">
-                <ion-icon
-                  name="chatbubble-ellipses-outline"
-                  class="text-xl"
-                ></ion-icon>
-                About</a
+          <nav class="overflow-hidden grow">
+            <ul class="flex flex-col gap-2 w-full text-white py-4">
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 active:bg-slate-700"
               >
-            </li>
-            <li
-              class="px-4 py-3 transition transform hover:bg-slate-600 hover:translate-x-4"
-            >
-              <a
-                href="contact.html"
-                class="flex items-center gap-2 active:bg-red-200"
+                <a href="#snacks" class="flex items-center gap-2">
+                  <ion-icon name="pizza-outline" class="text-xl"></ion-icon>
+                  Snack
+                </a>
+              </li>
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 active:bg-slate-700"
               >
-                <ion-icon name="call-outline" class="text-xl"></ion-icon>
-                Contact
-              </a>
-            </li>
+                <a href="#foods" class="flex items-center gap-2">
+                  <ion-icon name="fast-food-outline" class="text-xl"></ion-icon>
+                  Foods
+                </a>
+              </li>
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 active:bg-slate-700"
+              >
+                <a href="#wines" class="flex items-center gap-2">
+                  <ion-icon name="wine-outline" class="text-xl"></ion-icon>
+                  Wines
+                </a>
+              </li>
 
-            <li
-              class="px-4 py-3 transition transform hover:bg-slate-600 hover:translate-x-4 mt-auto"
-            >
-              <a href="" class="flex items-center gap-2">
-                <ion-icon
-                  name="person-circle-outline"
-                  class="text-xl"
-                ></ion-icon>
-                <span>Vincent</span>
-              </a>
-            </li>
-          </ul>
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 active:bg-slate-700"
+              >
+                <a href="about.html" class="flex items-center gap-2">
+                  <ion-icon
+                    name="chatbubble-ellipses-outline"
+                    class="text-xl"
+                  ></ion-icon>
+                  About</a
+                >
+              </li>
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 active:bg-slate-700"
+              >
+                <a
+                  href="contact.html"
+                  class="flex items-center gap-2 active:bg-red-200"
+                >
+                  <ion-icon name="call-outline" class="text-xl"></ion-icon>
+                  Contact
+                </a>
+              </li>
+
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 mt-auto active:bg-slate-700"
+              >
+                <a href="" class="flex items-center gap-2">
+                  <ion-icon
+                    name="person-circle-outline"
+                    class="text-xl"
+                  ></ion-icon>
+                  <span>Vincent</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
           <footer class="py-4 overflow-hidden bg-slate-600 text-white">
             <div
               class="px-4 py-3 transition transform hover:bg-slate-600 hover:translate-x-4"
@@ -194,119 +223,66 @@
         </section>
       </aside>
       <!-- HERO SECTION -->
-      <!-- <section class="bg-[#000] min-h-fit">
-       
-        <div class="max-w-full md:max-w-[90%] mx-auto px-4 md:py-45 pt-40 pb-10 px-6 bg-gray-50 h-full bg-[url('images/herobg2.jpg')] bg-no-repeat bg-center bg-cover bg-fixed relative">
-          <div class="absolute inset-0 bg-black/60"></div>
-          <div class="max-w-6xl mx-auto relative z-50 text-white">
-           
-            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              A Great Place To Eat
-              <span class="block">In The City Of Mississippi.</span>
-            </h1>
-            <p class="text-gray-200 max-w-xl mb-8 text-base">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-              asperiores laborum illo rerum sunt corporis assumenda impedit
-              doloremque. Maxime, adipisci!
-            </p>
+      <section
+        class="relative min-h-screen bg-[url('/images/herobg2.jpg')] bg-cover bg-center lg:bg-fixed"
+      >
+        <div class="absolute top-0 left-0 right-0 bottom-0 bg-black/60"></div>
+        <div
+          class="relative z-10 max-w-6xl mx-auto px-6 pt-40 pb-10 text-white"
+        >
+          <h1
+            class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+          >
+            A Great Place To Eat
+            <span class="block">In The City Of Mississippi.</span>
+          </h1>
+          <p class="text-gray-200 max-w-xl mb-8 text-base">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
+            asperiores laborum illo rerum sunt corporis assumenda impedit
+            doloremque. Maxime, adipisci!
+          </p>
 
-       
-            <a href="#categories" class="inline-block bg-white text-[#1a1a1a] py-3 px-6 rounded-tl-2xl rounded-br-2xl shadow-lg font-bold transition active:translate-y-[3px] hover:shadow-xl">View Recipes</a>
-            <div class="flex items-center mt-8">
-              <img
-                src="https://www.loremfaces.net/96/id/1.jpg"
-                alt="happy customer"
-                class="h-[50px] w-[50px] rounded-full border-4 border-white"
-              />
-              
-              <img
-                src="https://www.loremfaces.net/96/id/4.jpg"
-                alt="happy customer"
-                class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
-              />
-              <img
-                src="https://www.loremfaces.net/96/id/5.jpg"
-                alt="happy customer"
-                class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
-              />
-              <img
-                src="https://www.loremfaces.net/96/id/2.jpg"
-                alt="happy customer"
-                class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
-              />
-            </div>
-          
-            <div class="flex items-center mt-6 gap-1">
-                <ion-icon name="star" class="ion-icon"></ion-icon>
-                <ion-icon name="star" class="ion-icon"></ion-icon>
-                <ion-icon name="star" class="ion-icon"></ion-icon>
-                <ion-icon name="star" class="ion-icon"></ion-icon>
-                <ion-icon name="star-half" class="ion-icon"></ion-icon>
-                <span class="ml-2 text-gray-200 text-sm font-semibold">
-                4.9/5 from 2,000+ reviews
-              </span>
-            </div>
+          <a
+            href="#categories"
+            class="inline-block bg-white text-[#1a1a1a] py-3 px-6 rounded-tl-2xl rounded-br-2xl shadow-lg font-bold transition active:translate-y-[3px] hover:shadow-xl"
+            >View Recipes</a
+          >
+          <div class="flex items-center mt-8">
+            <img
+              src="https://www.loremfaces.net/96/id/1.jpg"
+              alt="happy customer"
+              class="h-[50px] w-[50px] rounded-full border-4 border-white"
+            />
+
+            <img
+              src="https://www.loremfaces.net/96/id/4.jpg"
+              alt="happy customer"
+              class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
+            />
+            <img
+              src="https://www.loremfaces.net/96/id/5.jpg"
+              alt="happy customer"
+              class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
+            />
+            <img
+              src="https://www.loremfaces.net/96/id/2.jpg"
+              alt="happy customer"
+              class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
+            />
+          </div>
+          <!-- Restaurant Rating -->
+          <div class="flex items-center mt-6 gap-1">
+            <ion-icon name="star" class="ion-icon"></ion-icon>
+            <ion-icon name="star" class="ion-icon"></ion-icon>
+            <ion-icon name="star" class="ion-icon"></ion-icon>
+            <ion-icon name="star" class="ion-icon"></ion-icon>
+            <ion-icon name="star-half" class="ion-icon"></ion-icon>
+            <span class="ml-2 text-gray-200 text-sm font-semibold">
+              4.5/5 from 2,000+ reviews
+            </span>
           </div>
         </div>
-      </section> -->
-
-
-
-
-
-
-<section class="relative min-h-screen bg-[url('/images/herobg2.jpg')] bg-cover bg-center lg:bg-fixed">
-  <div class="absolute top-0 left-0 right-0 bottom-0 bg-black/60"></div>
-  <div class="relative z-10 max-w-6xl mx-auto px-6 pt-40 pb-10 text-white">
-     <!-- prettier-ignore -->
-            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
-              A Great Place To Eat
-              <span class="block">In The City Of Mississippi.</span>
-            </h1>
-            <p class="text-gray-200 max-w-xl mb-8 text-base">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi
-              asperiores laborum illo rerum sunt corporis assumenda impedit
-              doloremque. Maxime, adipisci!
-            </p>
-
-            <!-- prettier-ignore -->
-            <a href="#categories" class="inline-block bg-white text-[#1a1a1a] py-3 px-6 rounded-tl-2xl rounded-br-2xl shadow-lg font-bold transition active:translate-y-[3px] hover:shadow-xl">View Recipes</a>
-            <div class="flex items-center mt-8">
-              <img
-                src="https://www.loremfaces.net/96/id/1.jpg"
-                alt="happy customer"
-                class="h-[50px] w-[50px] rounded-full border-4 border-white"
-              />
-              
-              <img
-                src="https://www.loremfaces.net/96/id/4.jpg"
-                alt="happy customer"
-                class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
-              />
-              <img
-                src="https://www.loremfaces.net/96/id/5.jpg"
-                alt="happy customer"
-                class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
-              />
-              <img
-                src="https://www.loremfaces.net/96/id/2.jpg"
-                alt="happy customer"
-                class="-ml-4 h-[50px] w-[50px] rounded-full border-4 border-white"
-              />
-            </div>
-            <!-- Restaurant Rating -->
-            <div class="flex items-center mt-6 gap-1">
-                <ion-icon name="star" class="ion-icon"></ion-icon>
-                <ion-icon name="star" class="ion-icon"></ion-icon>
-                <ion-icon name="star" class="ion-icon"></ion-icon>
-                <ion-icon name="star" class="ion-icon"></ion-icon>
-                <ion-icon name="star-half" class="ion-icon"></ion-icon>
-                <span class="ml-2 text-gray-200 text-sm font-semibold">
-                4.9/5 from 2,000+ reviews
-              </span>
-            </div>
-  </div>
-</section>
+      </section>
 
       <!-- CATEGORIES -->
       <section class="min-h-fit bg-[#f4f4f4] mb-18 py-8" id="categories">
@@ -1083,9 +1059,7 @@
 
                 <figcaption class="p-4">
                   <h3 class="font-semibold text-lg">Bacchus wine</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                     Wine made for you.
-                  </p>
+                  <p class="text-sm text-gray-600 mt-1">Wine made for you.</p>
                   <button
                     class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
                   >
@@ -1106,9 +1080,7 @@
 
                 <figcaption class="p-2">
                   <h3 class="font-semibold text-lg">Bottleking Wine</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                     Wine made for you.
-                  </p>
+                  <p class="text-sm text-gray-600 mt-1">Wine made for you.</p>
                   <button
                     class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
                   >
@@ -1129,9 +1101,7 @@
 
                 <figcaption class="p-4">
                   <h3 class="font-semibold text-lg">Craje wine</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                     Wine made for you.
-                  </p>
+                  <p class="text-sm text-gray-600 mt-1">Wine made for you.</p>
                   <button
                     class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
                   >
@@ -1152,9 +1122,7 @@
 
                 <figcaption class="p-4">
                   <h3 class="font-semibold text-lg">Declan wine</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Wine made for you.
-                  </p>
+                  <p class="text-sm text-gray-600 mt-1">Wine made for you.</p>
                   <button
                     class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
                   >
@@ -1175,9 +1143,7 @@
 
                 <figcaption class="p-4">
                   <h3 class="font-semibold text-lg">Fouthstreet wine</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Wine made for you.
-                  </p>
+                  <p class="text-sm text-gray-600 mt-1">Wine made for you.</p>
                   <button
                     class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
                   >
