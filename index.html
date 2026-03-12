@@ -226,7 +226,7 @@
       <section
         class="relative min-h-fit lg:min-h-screen bg-[url('images/herobg2.jpg')] bg-cover bg-center lg:bg-fixed"
       >
-        <div class="absolute top-0 left-0 right-0 bottom-0 bg-black/60"></div>
+        <div class="absolute top-0 left-0 right-0 bottom-0 bg-black/65"></div>
         <div
           class="relative z-10 max-w-6xl mx-auto px-6 pt-40 pb-10 text-white"
         >
@@ -285,7 +285,7 @@
       </section>
 
       <!-- CATEGORIES -->
-      <section class="min-h-fit bg-[#f4f4f4] mb-18 py-8" id="categories">
+      <section class="min-h-fit bg-[#f4f4f4] py-8" id="categories">
         <div
           class="max-w-full lg:max-w-[90%] mx-auto px-4 h-full py-8 bg-white overflow-x-auto rounded-4xl"
         >
@@ -551,6 +551,7 @@
         </div>
       </section>
       <!-- FOOD CARDS AND PRICES  -->
+      <!-- SNACKS SECTION -->
       <section class="bg-[#f4f4f4] py-8" id="snacks">
         <div
           class="max-w-full lg:max-w-[90%] mx-auto px-4 h-full py-8 bg-white rounded-4xl"
@@ -558,25 +559,29 @@
           <h1 class="font-bold text-xl md:text-2xl lg:text-3xl mb-6">Snacks</h1>
 
           <ul
-            class="grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-3"
+            class="grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-6"
           >
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
+                    src="images/burger.png"
                     alt="Burger"
-                    class="w-full h-40 object-contain"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
+                <figcaption class="p-3">
                   <h3 class="font-semibold text-lg">Burger Deluxe</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                  <p class="text-sm text-gray-600 mt-1">Burger made for you.</p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -584,22 +589,111 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
+                  <img
+                    src="images/cake.png"
+                    alt="cake"
+                    class="w-full h-full block object-cover"
+                  />
+                </a>
+
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Cake</h3>
+                  <p class="text-sm text-gray-600 mt-1">Cake made for you.</p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
+                  <button
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
+                  <img
+                    src="images/icecream (2).png"
+                    alt="icecream"
+                    class="w-full h-full block object-cover"
+                  />
+                </a>
+
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Ice Cream</h3>
+                  <p class="text-sm text-gray-600 mt-1">
+                    icre cream made for you.
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
+                  <button
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
+                  <img
+                    src="images/pizza.png"
+                    alt="pizza"
+                    class="w-full h-full block object-cover"
+                  />
+                </a>
+
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Pizza</h3>
+                  <p class="text-sm text-gray-600 mt-1">Pizza made for you.</p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
+                  <button
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
                     src="images/sandwich.png"
                     alt="sandwich"
-                    class="w-full h-40 object-contain"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
+                <figcaption class="p-3">
                   <h3 class="font-semibold text-lg">Sandwich</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled sandwich with cheese and fresh veggies.
+                    Sandwich made for you.
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -607,22 +701,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/icecream.png"
-                    alt="icecream"
-                    class="w-full h-40 object-contain"
+                    src="images/sausage.png"
+                    alt="sausage"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Sausage</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Chilled icre cream perfectly made for you .
+                    Sausage roll made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -630,22 +730,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/amala.png"
-                    alt="amala"
-                    class="w-full h-40 object-cover"
+                    src="images/eggroll.png"
+                    alt="eggroll"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Amala</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Egg roll</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Hot Amala tasty amala for all.
+                    Egg roll made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -653,22 +759,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/meatpie.png"
+                    alt="meatpie"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Meat pie</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Meat pie made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -676,22 +788,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/scotchegg.png"
+                    alt="scotchegg"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Scotch egg</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Scotch eggs made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -699,91 +817,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/doughnut.png"
+                    alt="doughnut"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Doughnut</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Doughnut made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
-                  >
-                    Add to Cart
-                  </button>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block">
-                  <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
-                  />
-                </a>
-
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
-                  </p>
-                  <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
-                  >
-                    Add to Cart
-                  </button>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block">
-                  <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
-                  />
-                </a>
-
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
-                  </p>
-                  <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
-                  >
-                    Add to Cart
-                  </button>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block">
-                  <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
-                  />
-                </a>
-
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
-                  </p>
-                  <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -802,94 +857,29 @@
           <h1 class="font-bold text-xl md:text-2xl lg:text-3xl mb-6">Foods</h1>
 
           <ul
-            class="grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-3"
+            class="grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-6 items-stretch"
           >
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
-                  <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-contain"
-                  />
-                </a>
-
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
-                  </p>
-                  <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
-                  >
-                    Add to Cart
-                  </button>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
-                  <img
-                    src="images/sandwich.png"
-                    alt="sandwich"
-                    class="w-full h-40 object-contain"
-                  />
-                </a>
-
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Sandwich</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled sandwich with cheese and fresh veggies.
-                  </p>
-                  <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
-                  >
-                    Add to Cart
-                  </button>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
-                  <img
-                    src="images/icecream.png"
-                    alt="icecream"
-                    class="w-full h-40 object-contain"
-                  />
-                </a>
-
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Chilled icre cream perfectly made for you .
-                  </p>
-                  <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
-                  >
-                    Add to Cart
-                  </button>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
                     src="images/amala.png"
                     alt="amala"
-                    class="w-full h-40 object-cover"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
+                <figcaption class="p-3">
                   <h3 class="font-semibold text-lg">Amala</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Hot Amala tasty amala for all.
+                  <p class="text-sm text-gray-600 mt-1">Amala made for you.</p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -897,22 +887,26 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/beans.png"
+                    alt="beans"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Beans</h3>
+                  <p class="text-sm text-gray-600 mt-1">Beans made for you.</p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -920,22 +914,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/chicken.png"
+                    alt="chicken"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Chicken</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Tasty Chicken made for you.
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -943,22 +943,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/egusi.png"
+                    alt="egusi"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Egusi</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Egusi soup made for you.
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -966,22 +972,26 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/nkwobi.png"
+                    alt="nkwobi"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
-                  <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Nkwobi</h3>
+                  <p class="text-sm text-gray-600 mt-1">Nkwobi made for you.</p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -989,22 +999,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/ogbolo.png"
+                    alt="ogbolo"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Ogbolo</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Ogbolo soup made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1012,22 +1028,115 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/paster.png"
+                    alt="paster"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Paster</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Tasty Paster made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
+                  <img
+                    src="images/peppersoup.png"
+                    alt="catfish peppersoup"
+                    class="w-full h-full block object-cover"
+                  />
+                </a>
+
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Peppersoup</h3>
+                  <p class="text-sm text-gray-600 mt-1">
+                    Catfish soup made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
+                  <button
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
+                  <img
+                    src="images/rice.png"
+                    alt="rice"
+                    class="w-full h-full block object-cover"
+                  />
+                </a>
+
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Rice</h3>
+                  <p class="text-sm text-gray-600 mt-1">
+                    Tasty rice made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
+                  <button
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
+                  >
+                    Add to Cart
+                  </button>
+                </figcaption>
+              </figure>
+            </li>
+            <li>
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
+                  <img
+                    src="images/porridge.png"
+                    alt="porridge"
+                    class="w-full h-full block object-cover"
+                  />
+                </a>
+
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Porridge</h3>
+                  <p class="text-sm text-gray-600 mt-1">
+                    Yam Porridge made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
+                  <button
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1045,23 +1154,31 @@
           <h1 class="font-bold text-xl md:text-2xl lg:text-3xl mb-6">Wines</h1>
 
           <ul
-            class="grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-3"
+            class="grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-6"
           >
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
                     src="images/baccus.png"
-                    alt="baccus wine"
-                    class="w-full h-40 object-cover"
+                    alt="baccus"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Bacchus wine</h3>
-                  <p class="text-sm text-gray-600 mt-1">Wine made for you.</p>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Bacchus</h3>
+                  <p class="text-sm text-gray-600 mt-1">
+                    Bacchus wine made for you.
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1069,20 +1186,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
                     src="images/bottleking.png"
                     alt="bottleking wine"
-                    class="w-full h-40 object-cover"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-2">
-                  <h3 class="font-semibold text-lg">Bottleking Wine</h3>
-                  <p class="text-sm text-gray-600 mt-1">Wine made for you.</p>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Bottleking</h3>
+                  <p class="text-sm text-gray-600 mt-1">
+                    Bottleking wine made for you.
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1090,20 +1215,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
                     src="images/craje.png"
                     alt="craje wine"
-                    class="w-full h-40 object-cover"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Craje wine</h3>
-                  <p class="text-sm text-gray-600 mt-1">Wine made for you.</p>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Craje</h3>
+                  <p class="text-sm text-gray-600 mt-1">
+                    Craje wine made for you.
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1111,20 +1244,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
                     src="images/declan.png"
                     alt="declan wine"
-                    class="w-full h-40 object-cover"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Declan wine</h3>
-                  <p class="text-sm text-gray-600 mt-1">Wine made for you.</p>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Declan</h3>
+                  <p class="text-sm text-gray-600 mt-1">
+                    Declan wine made for you.
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1132,20 +1273,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
                     src="images/fouthstreet.png"
                     alt="fouthstreet wine"
-                    class="w-full h-40 object-cover"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Fouthstreet wine</h3>
-                  <p class="text-sm text-gray-600 mt-1">Wine made for you.</p>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">4th Street</h3>
+                  <p class="text-sm text-gray-600 mt-1">
+                    4th street wine made for you.
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
+                  </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1153,22 +1302,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/sevenevelen.png"
+                    alt="jAndw wine"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">SevenEvelen</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    SevenEvelen wine made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1176,22 +1331,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/nederburg.png"
+                    alt="nederburg wine"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Nederburg</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Nederburg wine made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1199,22 +1360,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/pinot.png"
+                    alt="pinot wine"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Pinot</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Pinot wine made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1222,22 +1389,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/pureheaven.png"
+                    alt="pureheaven wine"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Purehaven</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Purehaven wine made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1245,22 +1418,28 @@
               </figure>
             </li>
             <li>
-              <figure class="bg-gray-50 rounded-lg overflow-hidden shadow-sm">
-                <a href="#" class="block hover:scale-105 transition">
+              <figure
+                class="bg-gray-50 rounded-lg overflow-hidden shadow-sm h-full flex flex-col"
+              >
+                <a href="#" class="block h-40 hover:scale-105 transition">
                   <img
-                    src="images/burger.webp"
-                    alt="Burger"
-                    class="w-full h-40 object-cover"
+                    src="images/richman.png"
+                    alt="richman wine"
+                    class="w-full h-full block object-cover"
                   />
                 </a>
 
-                <figcaption class="p-4">
-                  <h3 class="font-semibold text-lg">Burger Deluxe</h3>
+                <figcaption class="p-3">
+                  <h3 class="font-semibold text-lg">Richman</h3>
                   <p class="text-sm text-gray-600 mt-1">
-                    Juicy grilled burger with cheese and fresh veggies.
+                    Richman wine made for you
+                  </p>
+                  <p class="flex items-center justify-between gap-2">
+                    <span class="">Price:</span>
+                    <span class="font-bold">$5</span>
                   </p>
                   <button
-                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition"
+                    class="mt-3 w-full bg-black text-white py-2 rounded hover:bg-gray-800 transition cursor-pointer"
                   >
                     Add to Cart
                   </button>
@@ -1272,15 +1451,124 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="min-h-[50vh] bg-[#1a1a1a] text-white">
-        <div class="max-w-full lg:max-w-[90%] mx-auto px-4 h-full py-8">
-          <ul>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
+      <section class="min-h-[50vh] bg-black flex flex-col">
+        <div
+          class="max-w-full lg:max-w-[90%] mx-auto px-4 h-full py-8 grow w-full"
+        >
+          <div
+            class="w-full grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-6"
+          >
+            <aside class="text-white flex flex-col gap-2">
+              <h1
+                class="font-bold text-3xl flex items-center justify-start text-[gold]"
+              >
+                <ion-icon name="restaurant-outline" class="text-5xl"></ion-icon>
+                <span>Foodie</span>
+              </h1>
+              <p class="text-xs text-gray-300">
+                Your favourite place for delicious bites, and refreshing drinks.
+                Order today band enjoy fast, fresh delivery!
+              </p>
+              <ul class="flex items-center gap-2">
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://facebook.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-blue-600"
+                  >
+                    <ion-icon name="logo-facebook" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://x.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-blue-600"
+                  >
+                    <ion-icon name="logo-twitter" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://instagram.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-red-500"
+                  >
+                    <ion-icon name="logo-instagram" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://tiktok.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-red-600"
+                  >
+                    <ion-icon name="logo-tiktok" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+            <nav class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-gray-400 font-bold text-xl">
+                Navigation
+              </h2>
+              <ul
+                class="flex flex-col gap-3 text-sm text-gray-300 list-disc list-inside"
+              >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+
+            <nav class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-gray-400 font-bold text-xl">
+                Categories
+              </h2>
+              <ul class="flex flex-col gap-3 text-sm text-gray-300">
+                <li><a href="#snacks">Snacks</a></li>
+                <li><a href="#foods">Foods</a></li>
+                <li><a href="#wines">Wine</a></li>
+              </ul>
+            </nav>
+
+            <nav class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-gray-400 font-bold text-xl">
+                Customer Service
+              </h2>
+              <ul class="flex flex-col gap-3 text-sm text-gray-300">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Contact Support</a></li>
+              </ul>
+            </nav>
+
+            <aside class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-gray-400 font-bold text-xl">
+                Newsletter
+              </h2>
+
+              <div class="flex flex-col gap-3 text-sm text-gray-300">
+                <p class="">
+                  Subscribe to our newsletter for the lastest deals and offers
+                </p>
+                <form action="" class="">
+                  <label for="email">
+                    <input type="email" name="email" id="email" />
+                  </label>
+                  <button type="submit" class="">Subscribe</button>
+                </form>
+              </div>
+            </aside>
+          </div>
         </div>
+        <p class="text-center text-xs text-white py-2">
+          &copy;Foodie. All rights reserved. | Privacy Policy | Terms of Service
+        </p>
       </section>
     </footer>
     <script
