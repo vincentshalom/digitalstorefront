@@ -3,7 +3,554 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+      defer
+    ></script>
+    <link rel="stylesheet" href="index.css" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <header class="min-h-fit bg-[#444] fixed top-0 w-full z-100 py-4 px-4">
+      <!-- DESKTOP NAVIGATION -->
+      <nav
+        class="max-w-full lg:max-w-[90%] mx-auto py-3 lg:px-8 px-4 flex items-center justify-between gap-4 bg-[#fff] rounded-[100px] shadow"
+      >
+        <h1 class="font-bold text-3xl h-7 w-7 flex items-center justify-center">
+          <a
+            href="index.html"
+            class="h-full w-full flex items-center justify-center"
+          >
+            <ion-icon name="restaurant-outline" class="text-3xl"></ion-icon>
+          </a>
+        </h1>
+        <ul
+          class="hidden lg:flex items-center gap-5 font-semibold text-gray-600"
+        >
+          <li><a href="index.html#snacks">Snacks</a></li>
+          <li><a href="index.html#foods">Foods</a></li>
+          <li><a href="index.html#wines">Wine</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="flex items-center lg:gap-5 gap-3">
+          <form
+            class="hidden lg:flex items-center border border-slate-100 w-80 rounded-full py-1 px-2 focus-within:border-black overflow-hidden bg-white shadow"
+          >
+            <input
+              type="text"
+              name=""
+              id=""
+              class="outline-none bg-transparent text-sm px-2 w-full placeholder:text-gray-500"
+              placeholder="Search products..."
+            />
+            <button
+              type="submit"
+              class="h-7 w-7 p-1 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition"
+            >
+              <ion-icon name="search-outline" class="text-xl"></ion-icon>
+            </button>
+          </form>
+
+          <p
+            class="hidden h-7 w-7 lg:flex items-center justify-center rounded-full"
+          >
+            <a href="#" class="flex items-center">
+              <ion-icon
+                name="person-circle-outline"
+                class="cursor-pointer text-3xl"
+              ></ion-icon>
+            </a>
+          </p>
+
+          <button
+            type="submit"
+            class="h-7 w-7 p-1 bg-white rounded-full flex lg:hidden items-center justify-center hover:bg-gray-100 transition cursor-pointer"
+          >
+            <ion-icon name="search-outline" class="text-3xl"></ion-icon>
+          </button>
+
+          <button
+            type="button"
+            class="flex items-center relative h-7 w-7 flex items-center justify-center rounded-full"
+          >
+            <ion-icon
+              name="cart-outline"
+              class="cursor-pointer text-3xl"
+            ></ion-icon>
+            <span
+              class="absolute -top-2 -right-2 bg-red-500 text-white text-xs px-2 py-0.5 rounded-full"
+              >0</span
+            >
+          </button>
+          <button
+            type="button"
+            class="h-7 w-7 block lg:hidden ml-5 flex items-center justify-center"
+          >
+            <ion-icon
+              name="menu-outline"
+              class="cursor-pointer text-3xl"
+            ></ion-icon>
+          </button>
+        </div>
+      </nav>
+
+      <!-- MOBILE SEARCH BAR -->
+      <section
+        class="hidden lg:hidden absolute top-0 left-0 right-0 w-full z-[200] bg-[#f4f4f4] p-4 rounded-bl-[30px] rounded-br-[30px] min-h-[20rem]"
+      >
+        <div class="h-fit flex items-center gap-4 mt-[1.5rem]">
+          <form
+            class="flex items-center border border-slate-100 w-full rounded-sm py-2 px-2 focus-within:border-black overflow-hidden bg-white shadow"
+          >
+            <input
+              type="search"
+              name=""
+              id=""
+              class="outline-none bg-transparent text-sm px-2 w-full placeholder:text-gray-500 text-lg"
+              placeholder="Search Products..."
+            />
+            <button type="submit" class="p-1">
+              <ion-icon name="search-outline" class="text-xl"></ion-icon>
+            </button>
+          </form>
+
+          <button type="button" class="bg-transparent h-fit">
+            <ion-icon
+              name="close-outline"
+              class="text-xl cursor-pointer"
+            ></ion-icon>
+          </button>
+        </div>
+      </section>
+    </header>
+    <main class="relative bg-[#f4f4f4]">
+      <!-- MOBILE NAVIGATION -->
+      <aside
+        id="mobileMenu"
+        class="hidden lg:hidden fixed top-0 bottom-0 left-0 w-full min-h-screen z-[200] bg-[rgba(0,0,0,0.6)]"
+      >
+        <section class="w-3/4 bg-[#000] flex flex-col gap-3 min-h-screen">
+          <header
+            class="flex justify-between items-center gap-3 text-[#1a1a1a] py-[24.5px] px-4 bg-[#f4f4f4]"
+          >
+            <h1
+              class="font-bold text-3xl h-7 w-7 flex items-center justify-center"
+            >
+              <a
+                href="index.html"
+                class="h-full w-full flex items-center justify-center"
+              >
+                <ion-icon name="restaurant-outline" class="text-3xl"></ion-icon>
+              </a>
+            </h1>
+
+            <button type="button" class="bg-transparent">
+              <ion-icon name="close-outline" class="text-3xl"></ion-icon>
+            </button>
+          </header>
+          <nav class="overflow-hidden grow">
+            <ul class="flex flex-col gap-2 w-full text-white py-4">
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 active:bg-slate-700"
+              >
+                <a href="#snacks" class="flex items-center gap-2">
+                  <ion-icon name="pizza-outline" class="text-xl"></ion-icon>
+                  Snack
+                </a>
+              </li>
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 active:bg-slate-700"
+              >
+                <a href="#foods" class="flex items-center gap-2">
+                  <ion-icon name="fast-food-outline" class="text-xl"></ion-icon>
+                  Foods
+                </a>
+              </li>
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 active:bg-slate-700"
+              >
+                <a href="#wines" class="flex items-center gap-2">
+                  <ion-icon name="wine-outline" class="text-xl"></ion-icon>
+                  Wines
+                </a>
+              </li>
+
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 active:bg-slate-700"
+              >
+                <a href="about.html" class="flex items-center gap-2">
+                  <ion-icon
+                    name="chatbubble-ellipses-outline"
+                    class="text-xl"
+                  ></ion-icon>
+                  About</a
+                >
+              </li>
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 active:bg-slate-700"
+              >
+                <a
+                  href="contact.html"
+                  class="flex items-center gap-2 active:bg-red-200"
+                >
+                  <ion-icon name="call-outline" class="text-xl"></ion-icon>
+                  Contact
+                </a>
+              </li>
+
+              <li
+                class="px-4 py-3 transition transform hover:bg-slate-500 hover:translate-x-4 mt-auto active:bg-slate-700"
+              >
+                <a href="" class="flex items-center gap-2">
+                  <ion-icon
+                    name="person-circle-outline"
+                    class="text-xl"
+                  ></ion-icon>
+                  <span>Vincent</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <footer class="py-4 overflow-hidden bg-slate-600 text-white">
+            <div
+              class="px-4 py-3 transition transform hover:bg-slate-600 hover:translate-x-4"
+            >
+              <a href="" class="flex items-center gap-2">
+                <ion-icon name="settings-outline" class="text-xl"></ion-icon>
+                <span>Settings</span>
+              </a>
+            </div>
+          </footer>
+        </section>
+      </aside>
+
+      <!-- WHY CHOOSE US -->
+      <section class="pt-24 pb-12">
+        <div
+          class="max-w-full lg:max-w-[90%] mx-auto px-4 h-full py-8 text-[#333]"
+        >
+          <h2
+            class="text-center text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-6"
+          >
+            Why Choose Us?
+          </h2>
+
+          <div
+            class="grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-4"
+          >
+            <article class="bg-white px-4 py-12 rounded-md shadow-md">
+              <h3 class="font-bold text-center mb-1">Fresh Ingredients</h3>
+              <p class="text-center">
+                We use only organic and locally sourced ingredients.
+              </p>
+            </article>
+
+            <article class="bg-white px-4 py-12 rounded-md shadow-md">
+              <h3 class="font-bold text-center mb-1">Fast Delivery</h3>
+              <p class="text-center">
+                Your food arrives hot and fresh within minutes.
+              </p>
+            </article>
+
+            <article class="bg-white px-4 py-12 rounded-md shadow-md">
+              <h3 class="font-bold text-center mb-1">Affordable Prices</h3>
+              <p class="text-center">Premium taste without premium prices.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="">
+        <div
+          class="max-w-full lg:max-w-[90%] mx-auto px-4 h-full pt-0 pb-12 text-[#333]"
+        >
+          <article
+            class="bg-white shadow-md p-2 rounded-md flex flex-col gap-6 py-4 px-3"
+          >
+            <header>
+              <h1
+                class="text-center text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-2"
+              >
+                Our Story
+              </h1>
+              <p class="text-center leading-normal">
+                From humble beginnings to a beloved local favorite, <br />our
+                journey is one of passion, dedication, and a love for authentic
+                home-style cooking.
+              </p>
+            </header>
+
+            <section>
+              <h2
+                class="text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-2"
+              >
+                The Beginning
+              </h2>
+              <p class="leading-normal">
+                Our restaurant opened its doors in 2015, inspired by a simple
+                idea: to bring the warmth and comfort of home-cooked meals to
+                everyone in our community. What started as a small kitchen with
+                just a handful of recipes has grown into a bustling place where
+                food lovers gather to enjoy flavors that feel both familiar and
+                exciting.
+              </p>
+              <p class="leading-normal">
+                In those early days, we focused on quality over quantity,
+                personally preparing every dish and ensuring that every customer
+                felt welcomed like part of our family. The feedback and support
+                from our first patrons encouraged us to keep innovating and
+                growing.
+              </p>
+            </section>
+
+            <section>
+              <h2
+                class="text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-2"
+              >
+                Our Mission
+              </h2>
+              <p class="leading-normal">
+                At the heart of our restaurant is a mission to make great food
+                accessible to all. We believe that a delicious meal can bring
+                people together, create memories, and brighten even the busiest
+                day. Our goal is to combine fresh, locally sourced ingredients
+                with creative recipes to deliver meals that are wholesome,
+                flavorful, and unforgettable.
+              </p>
+              <p class="leading-normal">
+                Beyond just food, we are committed to sustainability, supporting
+                local farmers, and giving back to the community. Every plate we
+                serve reflects our dedication to quality, integrity, and the
+                simple joy of sharing good food.
+              </p>
+            </section>
+
+            <section>
+              <h2
+                class="text-xl md:text-2xl lg:text-3xl font-bold leading-tight mb-2"
+              >
+                Today
+              </h2>
+              <p class="leading-normal">
+                Today, we proudly serve thousands of happy customers across the
+                city and beyond. Our menu has expanded to include a variety of
+                dishes inspired by both local and international flavors, while
+                still staying true to our home-style roots.
+              </p>
+              <p class="leading-normal">
+                Our team has grown from a small group of passionate cooks to a
+                vibrant family of chefs, servers, and staff who share the same
+                love for food and dedication to excellent customer service.
+                Every day, we strive to create memorable experiences that keep
+                our community coming back for more.
+              </p>
+              <p class="leading-normal">
+                As we look to the future, we remain committed to innovation,
+                sustainability, and the joy of connecting people through food.
+                Our story continues, one delicious meal at a time.
+              </p>
+            </section>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="min-h-fit bg-[#333] flex flex-col">
+        <div
+          class="max-w-full lg:max-w-[90%] mx-auto px-4 h-full py-8 grow w-full"
+        >
+          <div
+            class="w-full grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-6 py-4"
+          >
+            <aside class="text-white flex flex-col gap-2">
+              <h1
+                class="font-bold text-3xl flex items-center justify-start text-bg-orange-500"
+              >
+                <ion-icon name="restaurant-outline" class="text-5xl"></ion-icon>
+                <span>Foodie</span>
+              </h1>
+              <p class="text-xs text-gray-300">
+                Your favourite place for delicious bites, and refreshing drinks.
+                Order today band enjoy fast, fresh delivery!
+              </p>
+              <ul class="flex items-center gap-2">
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://facebook.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-blue-600"
+                  >
+                    <ion-icon name="logo-facebook" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://x.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-blue-600"
+                  >
+                    <ion-icon name="logo-twitter" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://instagram.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-red-500"
+                  >
+                    <ion-icon name="logo-instagram" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://tiktok.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-red-600"
+                  >
+                    <ion-icon name="logo-tiktok" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+            <nav class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-gray-400 font-bold text-xl">
+                Navigation
+              </h2>
+              <ul
+                class="flex flex-col gap-3 text-sm text-gray-300 list-disc list-inside"
+              >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+
+            <nav class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-gray-400 font-bold text-xl">
+                Categories
+              </h2>
+              <ul class="flex flex-col gap-3 text-sm text-gray-300">
+                <li><a href="#snacks">Snacks</a></li>
+                <li><a href="#foods">Foods</a></li>
+                <li><a href="#wines">Wine</a></li>
+              </ul>
+            </nav>
+
+            <nav class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-gray-400 font-bold text-xl">
+                Customer Service
+              </h2>
+              <ul class="flex flex-col gap-3 text-sm text-gray-300">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Contact Support</a></li>
+              </ul>
+            </nav>
+
+            <aside class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-gray-400 font-bold text-xl">
+                Newsletter
+              </h2>
+
+              <div class="flex flex-col gap-3 text-sm text-gray-300">
+                <p class="">
+                  Subscribe to our newsletter for the lastest deals and offers
+                </p>
+                <form
+                  action=""
+                  class="flex border-1 border-gray-200/50 rounded-sm overflow-hidden"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Subscribe for newsletter..."
+                    class="w-full border-0 outline-0 px-2 placeholder:text-xs placeholder:text-white"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-[gold] text-[#1a1a1a] block shrink-0 py-2 px-2 border-0"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </aside>
+          </div>
+          <div
+            class="w-full grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-6 py-4 border-t border-b border-white/40"
+          >
+            <div class="flex flex-col gap-4">
+              <h2 class="text-gray-400 font-bold text-xl">Contact Us</h2>
+              <ul class="text-gray-300 flex flex-col gap-2">
+                <li>
+                  <a href="+2348164613530" class="flex items-center gap-2">
+                    <ion-icon name="call-outline" class="text-xl"></ion-icon>
+                    <span class="">+2348164613530</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:support@foodie.com"
+                    class="flex items-center gap-2"
+                  >
+                    <ion-icon name="mail-outline" class="text-xl"></ion-icon>
+                    <span>support@foodie.com</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center gap-2">
+                    <ion-icon
+                      name="location-outline"
+                      class="text-xl"
+                    ></ion-icon>
+                    <span class="">123 Foodie Street, Mississippi, USA</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col gap-4">
+              <h2 class="text-xl text-gray-400 text-right font-bold">
+                We Accept
+              </h2>
+              <div class="flex items-center gap-2 showdow-lg h-15 justify-end">
+                <img
+                  src="images/visa.png"
+                  alt="visa card"
+                  class="h-full block flex"
+                />
+                <img
+                  src="images/mastercard.png"
+                  alt="master card"
+                  class="h-full block flex"
+                />
+                <img
+                  src="images/paypal.png"
+                  alt="paypal"
+                  class="h-full block flex"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-xs text-white py-2">
+          &copy;Foodie. All rights reserved. | Privacy Policy | Terms of Service
+        </p>
+      </section>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
