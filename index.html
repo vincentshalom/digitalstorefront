@@ -1456,7 +1456,7 @@
           class="max-w-full lg:max-w-[90%] mx-auto px-4 h-full py-8 grow w-full"
         >
           <div
-            class="w-full grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-6"
+            class="w-full grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-6 py-4"
           >
             <aside class="text-white flex flex-col gap-2">
               <h1
@@ -1556,14 +1556,94 @@
                 <p class="">
                   Subscribe to our newsletter for the lastest deals and offers
                 </p>
-                <form action="" class="">
-                  <label for="email">
-                    <input type="email" name="email" id="email" />
-                  </label>
-                  <button type="submit" class="">Subscribe</button>
+                <form
+                  action=""
+                  class="flex border-1 border-gray-200/50 rounded-sm overflow-hidden"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Subscribe for newsletter..."
+                    class="w-full border-0 outline-0 px-2 placeholder:text-xs placeholder:text-white"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-[gold] text-[#1a1a1a] block shrink-0 py-2 px-2 border-0"
+                  >
+                    Subscribe
+                  </button>
                 </form>
               </div>
             </aside>
+          </div>
+          <div
+            class="w-full grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-6 py-4 border-t border-b border-white/40"
+          >
+            <div class="flex flex-col gap-4">
+              <h2 class="text-gray-400 font-bold text-xl">Contact Us</h2>
+              <ul class="text-gray-300 flex flex-col gap-2">
+                <li>
+                  <a href="+2348164613530" class="flex items-center gap-2">
+                    <ion-icon name="call-outline" class="text-xl"></ion-icon>
+                    <span class="">+2348164613530</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:support@foodie.com"
+                    class="flex items-center gap-2"
+                  >
+                    <ion-icon name="mail-outline" class="text-xl"></ion-icon>
+                    <span>support@foodie.com</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col gap-4">
+              <ul class="flex flex-col gap-3 text-gray-300 lg:mt-9">
+                <li>
+                  <a href="#" class="flex items-center gap-2">
+                    <ion-icon
+                      name="location-outline"
+                      class="text-xl"
+                    ></ion-icon>
+                    <span class="">123 Foodie Street, Mississippi, USA</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:vincentshalom7@gmail.com"
+                    class="flex items-center gap-2"
+                  >
+                    <ion-icon name="mail-outline" class="text-xl"></ion-icon>
+                    <span>support@foodie.com</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="">
+              <h2 class="">We Accept</h2>
+              <div class="flex items-center gap-2 showdow-lg h-15 justify-end">
+                <img
+                  src="images/visa.png"
+                  alt="visa card"
+                  class="h-full block flex"
+                />
+                <img
+                  src="images/mastercard.png"
+                  alt="master card"
+                  class="h-full block flex"
+                />
+                <img
+                  src="images/paypal.png"
+                  alt="paypal"
+                  class="h-full block flex"
+                />
+              </div>
+            </div>
           </div>
         </div>
         <p class="text-center text-xs text-white py-2">
